@@ -95,7 +95,8 @@ Nell'ambito dello sviluppo di applicazioni microfrontend con Module Federation, 
 
 ### Applicazione Host
 
-L'**Applicazione Host** è il punto di ingresso principale per l'applicazione microfrontend. È responsabile del caricamento delle diverse parti (o moduli) dell'applicazione, che possono essere sviluppate, distribuite e gestite indipendentemente l'una dall'altra. In un contesto di Module Federation, l'Applicazione Host ha i seguenti ruoli:
+**L'Applicazione Host** è il punto di ingresso principale per l'applicazione microfrontend. È responsabile del caricamento delle diverse parti (o moduli) dell'applicazione, che possono essere sviluppate, distribuite e gestite indipendentemente l'una dall'altra. In un contesto di Module Federation, l'Applicazione Host ha i seguenti ruoli:<br/><br/>
+<img src="./HOST-MICROFRONTEND.jpg">
 
 1. **Orchestrare i Microfrontends**: L'Applicazione Host coordina il caricamento e l'integrazione dei vari microfrontends. Funziona come un contenitore per i diversi moduli, assicurandosi che siano caricati nel contesto giusto e al momento giusto.
 
@@ -107,7 +108,10 @@ L'**Applicazione Host** è il punto di ingresso principale per l'applicazione mi
 
 ### App-Shell
 
-L'**App-Shell** è una struttura base, o "scheletro", dell'interfaccia utente dell'applicazione. In un'architettura microfrontend, l'App-Shell è utilizzata per fornire una coerenza visiva e funzionale attraverso l'intera applicazione. Le sue caratteristiche includono:
+**L'App-Shell** è una struttura base, o "scheletro", dell'interfaccia utente dell'applicazione. In un'architettura microfrontend, l'App-Shell è utilizzata per fornire una coerenza visiva e funzionale attraverso l'intera applicazione. Le sue caratteristiche includono:
+
+<img src="./SHELL-MICROFRONTEND.png">
+
 
 1. **Layout di Base**: Definisce il layout di base dell'applicazione, inclusi header, footer, e aree di navigazione. Questo layout è generalmente statico e rimane costante mentre i contenuti (i microfrontends) cambiano.
 
@@ -149,7 +153,7 @@ Di seguito i passi necessari per convertire EBUY in un'applicazione MultiFronten
  **Pulire**<br/> 
  Con Module Federation, l'applicazione host si occupa dell'instradamento e non è necessario utilizzare le configurazioni proxy definite nel file proxy.conf.json. Quindi, cancelleremo questo file e rimuoveremo le configurazioni non necessarie dal file project.json. Cancellare /apps/ catalog/ proxy.conf.json e, nel file catalog/ project.json, cancellare la seguente riga: "proxyConfig": "apps/ catalog/ proxy.conf.json" Già che ci siamo, possiamo anche sbarazzarci di baseRef, che abbiamo definito nel nostro file checkout/ project. json. Individuare questa riga e cancellarla: "baseHref": "/ checkout/"
 
-I**mpostazione dell'applicazione host App-shell**<br/>
+**Impostazione dell'applicazione host App-shell**<br/>
 Ora siamo pronti per iniziare la migrazione delle nostre applicazioni multi-SPA a Module Federation.
 Nx Console dispone di un ingegnoso generatore per la creazione di un host e di applicazioni remote per Module Federation. Seguite questi passaggi:
 
