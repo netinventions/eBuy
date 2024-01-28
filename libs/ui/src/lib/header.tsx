@@ -1,6 +1,28 @@
 import { Menu, Container, Icon, Label } from 'semantic-ui-react';
+import { useEffect, useState } from 'react';
+import { useEventListener } from 'usehooks-ts';
+import { getSessionStorage } from '@ebuy/utils';
+
+const getTotalBasketCount = (basket:any):any => {
+  return Object.values(basket).reduce((a:any, b:any) => a + b, 0);
+}
+
 
 export function Header() {
+
+  const [miniBasketCount, setMiniBasketCount] = useState(null);
+
+  useEffect(() => {
+    const basket: any = getSessionStorage('shoppingBasket');
+    const totalCount : any = getTotalBasketCount(basket);
+    setMiniBasketCount(totalCount);
+  }, []);
+  
+  useEventListener('session-storage', () => {
+    const basket: any = getSessionStorage('shoppingBasket');
+    const totalCount : any = getTotalBasketCount(basket);
+    setMiniBasketCount( totalCount);
+  });
   return (
     <Menu fixed="top" inverted>
       <Container fixed="top">
@@ -11,7 +33,7 @@ export function Header() {
         <Menu.Item position='right'>
           <Label>
             <Icon name="shopping cart">
-              00
+              {' ' + miniBasketCount}
             </Icon>
           </Label>
         </Menu.Item>
