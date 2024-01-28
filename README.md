@@ -158,6 +158,29 @@ Ora siamo pronti per iniziare la migrazione delle nostre applicazioni multi-SPA 
 Nx Console dispone di un ingegnoso generatore per la creazione di un host e di applicazioni remote per Module Federation. Seguite questi passaggi:
 
 
+### CREARE UN'APPLICAZIONE REACT HOST###
+Occorre usare:<br/>
+ **Nx Console | Generate | @nrwl/react – host Generate a host react application**
+
+Poi impostiamo i seguenti parametri:<br/>
+- **Name**: aap-shell
+- **devServerPort**: 4200
+- **e2eTestrunner**: none
+- **remote**: lasciare bianco perché per un bug non si posso elencare più app. **MA NON VERIFICATO NELLE MIE VERSIONI**, in futuro verificare.
+
+Per il presunto bug, menzianotato all'ultimo precedente punto, aprire nella nuova apps:  
+**apps/app-shell/module-federation.config.js**  
+e la proprietà array remotes, sarà valorizzata con le nostre applicazioni già create  
+**remotes: ['catalog', 'checkout']**  
+
+Adesso apriamo **apps/app-shell/src/app/app.tsx** e diamo un'occhiata.  
+
+Si noterà che questo utilizza concetti React, come:
+- React.Sequence
+- React Routes e Route
+
+### MODIFICARE IL TEMPLATE GENERATO PER App.tsx ###
+
 
 
 
