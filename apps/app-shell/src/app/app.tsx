@@ -1,6 +1,7 @@
-import * as React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-
+import React from 'react';
+import {Route, Routes } from 'react-router-dom';
+import {Container} from 'semantic-ui-react';
+import 'semantic-ui-ccs/semantic.min.css';
 export function App() {
   return (
     <React.Suspense fallback={null}>
