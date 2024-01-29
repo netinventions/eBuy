@@ -1,0 +1,91 @@
+[NX Daemon Server] - 2024-01-29T21:52:19.543Z - Started listening on: \\.\pipe\nx\C:\Users\loren\AppData\Local\Temp\01363988cce4a89cab21\d.sock
+[NX Daemon Server] - 2024-01-29T21:52:19.590Z - [WATCHER]: Subscribed to changes within: C:\Users\loren\VisualStudioCode\Projects\eBuy (native)
+[NX Daemon Server] - 2024-01-29T21:52:19.593Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-01-29T21:52:19.595Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-01-29T21:52:19.598Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-01-29T21:52:19.600Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-01-29T21:52:20.139Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-01-29T21:52:20.188Z - [REQUEST]: 
+[NX Daemon Server] - 2024-01-29T21:52:20.189Z - [REQUEST]: 
+
+ >  NX   Failed to parse pnpm lockfile
+
+   Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+   
+Original error: Could not find ".modules.yaml" at "C:\Users\loren\VisualStudioCode\Projects\eBuy/node_modules/.modules.yaml"
+
+
+   Error: Could not find ".modules.yaml" at "C:\Users\loren\VisualStudioCode\Projects\eBuy/node_modules/.modules.yaml"
+    at loadPnpmHoistedDepsDefinition (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\utils\pnpm-normalizer.js:23:15)
+    at getNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:69:77)
+    at getPnpmLockfileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:27:12)
+    at getLockFileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\lock-file.js:36:59)
+    at exports.createNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\index.js:42:64)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\project-configuration-utils.js:146:29)
+    at createProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:46:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Unable to create nodes for pnpm-lock.yaml using plugin nx/js/dependencies-and-lockfile. 
+
+	 Inner Error: Error: Could not find ".modules.yaml" at "C:\Users\loren\VisualStudioCode\Projects\eBuy/node_modules/.modules.yaml"
+    at loadPnpmHoistedDepsDefinition (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\utils\pnpm-normalizer.js:23:15)
+    at getNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:69:77)
+    at getPnpmLockfileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:27:12)
+    at getLockFileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\lock-file.js:36:59)
+    at exports.createNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\index.js:42:64)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\project-configuration-utils.js:146:29)
+    at createProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:46:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[NX Daemon Server] - 2024-01-29T21:52:21.428Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Unable to create nodes for pnpm-lock.yaml using plugin nx/js/dependencies-and-lockfile. 
+
+	 Inner Error: Error: Could not find ".modules.yaml" at "C:\Users\loren\VisualStudioCode\Projects\eBuy/node_modules/.modules.yaml"
+    at loadPnpmHoistedDepsDefinition (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\utils\pnpm-normalizer.js:23:15)
+    at getNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:69:77)
+    at getPnpmLockfileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:27:12)
+    at getLockFileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\lock-file.js:36:59)
+    at exports.createNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\index.js:42:64)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\project-configuration-utils.js:146:29)
+    at createProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:46:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+CreateNodesError: Unable to create nodes for pnpm-lock.yaml using plugin nx/js/dependencies-and-lockfile. 
+
+	 Inner Error: Error: Could not find ".modules.yaml" at "C:\Users\loren\VisualStudioCode\Projects\eBuy/node_modules/.modules.yaml"
+    at loadPnpmHoistedDepsDefinition (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\utils\pnpm-normalizer.js:23:15)
+    at getNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:69:77)
+    at getPnpmLockfileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:27:12)
+    at getLockFileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\lock-file.js:36:59)
+    at exports.createNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\index.js:42:64)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\project-configuration-utils.js:146:29)
+    at createProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:46:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\project-configuration-utils.js:173:27)
+    at createProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:89:156)
+    ... 2 lines matching cause stack trace ...
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\daemon\server\server.js:81:9) {
+  [cause]: Error: Could not find ".modules.yaml" at "C:\Users\loren\VisualStudioCode\Projects\eBuy/node_modules/.modules.yaml"
+      at loadPnpmHoistedDepsDefinition (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\utils\pnpm-normalizer.js:23:15)
+      at getNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:69:77)
+      at getPnpmLockfileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:27:12)
+      at getLockFileNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\lock-file\lock-file.js:36:59)
+      at exports.createNodes (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\plugins\js\index.js:42:64)
+      at buildProjectsConfigurationsFromProjectPathsAndPlugins (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\project-configuration-utils.js:146:29)
+      at createProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:89:156)
+      at _retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:61:12)
+      at retrieveProjectConfigurations (C:\Users\loren\AppData\Local\pnpm\global\5\.pnpm\nx@17.3.0\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:46:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[NX Daemon Server] - 2024-01-29T21:52:21.431Z - Time taken for 'hash changed files from watcher' 537.2542000000831ms
+[NX Daemon Server] - 2024-01-29T21:52:21.431Z - Done responding to the client null
