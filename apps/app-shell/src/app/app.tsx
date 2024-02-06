@@ -2,17 +2,14 @@ import React from 'react';
 import {Route, Routes } from 'react-router-dom';
 import {Container} from 'semantic-ui-react';
 import 'semantic-ui-ccs/semantic.min.css';
+import {Header} from '@ebuy/ui';
 export function App() {
   return (
     <React.Suspense fallback={null}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-      </ul>
-      <Routes>
-        <Route path="/" element={<NxWelcome title="app-shell" />} />
-      </Routes>
+      <Container style={{marginTop: '5rem'}}>
+        <Header />
+        
+      </Container>
     </React.Suspense>
   );
 }
