@@ -20,6 +20,13 @@
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
+      "serve-static": {"executor": "@nrwl/web:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+      "buildTarget": "catalog:build",
+      "port": 4201
+      }
+    },
       "configurations": {
         "development": {
           "extractLicenses": false,
@@ -49,7 +56,7 @@
       "options": {
         "buildTarget": "catalog:build",
         "hmr": true,
-        "port": 4200
+        "port": 4201
       },
       "configurations": {
         "development": {
