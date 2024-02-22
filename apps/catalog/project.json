@@ -66,7 +66,7 @@
           "buildTarget": "catalog:build:production",
           "hmr": false
         }
-      }
+      }  
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
@@ -82,6 +82,14 @@
         "jestConfig": "apps/catalog/jest.config.ts",
         "passWithNoTests": true
       }
+    }
+  },
+  "server-static": {
+    "executor": "@nrwl/web:file-server",
+    "defaultConfiguration": "development",
+    "options":{
+      "buildTarget": "catalog:build",
+      "port": 4201
     }
   },
   "tags": []
