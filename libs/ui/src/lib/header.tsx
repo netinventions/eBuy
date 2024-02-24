@@ -2,6 +2,7 @@ import { Menu, Container, Icon, Label } from 'semantic-ui-react';
 import { useEffect, useState } from 'react';
 import { useEventListener } from 'usehooks-ts';
 import { getSessionStorage } from '@ebuy/utils';
+import { Link } from 'react-router-dom';
 
 const getTotalBasketCount = (basket:any):any => {
   return Object.values(basket).reduce((a:any, b:any) => a + b, 0);
@@ -47,7 +48,7 @@ const MenuItems = () => {
     <>
       {NAV_ITEMS.map((navItem) =>(
         <Menu.Item key={navItem.label}>
-          <a href={navItem.href ?? '#'}>{navItem.label}</a>
+          <Link to={navItem.href ?? '#'}>{navItem.label}</Link>
         </Menu.Item>
       ))}
     </>
