@@ -15,6 +15,7 @@ export function App() {
         <Routes>
           <Route path='/' element={<Catalog />}/>
           <Route path="/checkout" element={<Checkout />}/>
+          <Route path='/catalog' element={<Catalog />}/>
         </Routes>
       </Container>
     </React.Suspense>

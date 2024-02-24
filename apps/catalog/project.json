@@ -18,15 +18,8 @@
         "assets": ["apps/catalog/src/favicon.ico", "apps/catalog/src/assets"],
         "styles": ["apps/catalog/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/catalog/webpack.config.js"
       },
-      "serve-static": {"executor": "@nrwl/web:file-server",
-      "defaultConfiguration": "development",
-      "options": {
-      "buildTarget": "catalog:build",
-      "port": 4201
-      }
-    },
       "configurations": {
         "development": {
           "extractLicenses": false,
@@ -51,7 +44,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/webpack:dev-server",
+      "executor": "@nrwl/react:module-federation-dev-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "catalog:build",
@@ -84,7 +77,7 @@
       }
     }
   },
-  "server-static": {
+  "serve-static": {
     "executor": "@nrwl/web:file-server",
     "defaultConfiguration": "development",
     "options":{
