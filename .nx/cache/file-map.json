@@ -1,0 +1,812 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.0.5",
+  "deps": {
+    "core-js": "^3.6.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.1",
+    "regenerator-runtime": "0.13.7",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "tslib": "^2.3.0",
+    "usehooks-ts": "^2.9.5",
+    "@nrwl/cli": "14.8.9",
+    "@nrwl/cypress": "14.8.9",
+    "@nrwl/eslint-plugin-nx": "14.8.9",
+    "@nrwl/jest": "14.8.9",
+    "@nrwl/linter": "14.8.9",
+    "@nrwl/react": "14.8.9",
+    "@nrwl/web": "14.8.9",
+    "@nrwl/workspace": "14.8.9",
+    "@testing-library/react": "13.4.0",
+    "@types/jest": "28.1.1",
+    "@types/node": "16.11.7",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "@types/react-router-dom": "5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "babel-jest": "28.1.1",
+    "cypress": "^10.7.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
+    "nx": "14.8.9",
+    "prettier": "^2.6.2",
+    "react-test-renderer": "18.2.0",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1",
+    "typescript": "~4.8.2"
+  },
+  "pathMappings": {
+    "@ebuy/custom-hooks": [
+      "libs/custom-hooks/src/index.ts"
+    ],
+    "@ebuy/mocks": [
+      "libs/mocks/src/index.ts"
+    ],
+    "@ebuy/ui": [
+      "libs/ui/src/index.ts"
+    ],
+    "@ebuy/utils": [
+      "libs/utils/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "CODEOWNERS",
+        "hash": "10015936064976820925"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "5546405625092116747"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11038079010016205140"
+      },
+      {
+        "file": "HOST-MICROFRONTEND.jpg",
+        "hash": "8179823459053133401"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "nx.json",
+        "hash": "2152555479071921745"
+      },
+      {
+        "file": "package.json",
+        "hash": "993924035214075619"
+      },
+      {
+        "file": "tools/generators/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "17666962557300311861"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16015527170048785523"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "1324685984948235314"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1880664178033616490"
+      },
+      {
+        "file": "SHELL-MICROFRONTEND.png",
+        "hash": "15281294468998740101"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3069074216761126282"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "4826372789042185243"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "README.md",
+        "hash": "12646667509497625428"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9483251403686547478"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      }
+    ],
+    "projectFileMap": {
+      "catalog-e2e": [
+        {
+          "file": "apps/catalog-e2e/.eslintrc.json",
+          "hash": "15523834149352881398"
+        },
+        {
+          "file": "apps/catalog-e2e/cypress.config.ts",
+          "hash": "14925566057180716649",
+          "deps": [
+            "npm:cypress",
+            "npm:@nrwl/cypress"
+          ]
+        },
+        {
+          "file": "apps/catalog-e2e/project.json",
+          "hash": "6259512414280119226"
+        },
+        {
+          "file": "apps/catalog-e2e/src/e2e/app.cy.ts",
+          "hash": "10382144975230185567"
+        },
+        {
+          "file": "apps/catalog-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/catalog-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/catalog-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/catalog-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/catalog-e2e/tsconfig.json",
+          "hash": "1788248097864730386"
+        }
+      ],
+      "utils": [
+        {
+          "file": "libs/utils/.babelrc",
+          "hash": "4436343299449869453"
+        },
+        {
+          "file": "libs/utils/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/utils/README.md",
+          "hash": "10282993753073018259"
+        },
+        {
+          "file": "libs/utils/jest.config.ts",
+          "hash": "14774222007831654793"
+        },
+        {
+          "file": "libs/utils/project.json",
+          "hash": "11175487805134452221"
+        },
+        {
+          "file": "libs/utils/src/index.ts",
+          "hash": "12952679358556709244"
+        },
+        {
+          "file": "libs/utils/src/lib/get-session-storage.ts",
+          "hash": "11323288243242984828"
+        },
+        {
+          "file": "libs/utils/tsconfig.json",
+          "hash": "17079550796797979564"
+        },
+        {
+          "file": "libs/utils/tsconfig.lib.json",
+          "hash": "13034901906147047048"
+        },
+        {
+          "file": "libs/utils/tsconfig.spec.json",
+          "hash": "2406015174838385060"
+        }
+      ],
+      "checkout": [
+        {
+          "file": "apps/checkout/.babelrc",
+          "hash": "2147035467589940360"
+        },
+        {
+          "file": "apps/checkout/.browserslistrc",
+          "hash": "2888533144288818662"
+        },
+        {
+          "file": "apps/checkout/.eslintrc.json",
+          "hash": "659015603474373109"
+        },
+        {
+          "file": "apps/checkout/jest.config.ts",
+          "hash": "11867870444474240511"
+        },
+        {
+          "file": "apps/checkout/module-federation.config.js",
+          "hash": "7395244377723241714"
+        },
+        {
+          "file": "apps/checkout/project.json",
+          "hash": "17113750789514244653"
+        },
+        {
+          "file": "apps/checkout/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/checkout/src/app/app.spec.tsx",
+          "hash": "1473652639836263168",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/app/app.tsx",
+          "hash": "5082460166348950120",
+          "deps": [
+            "ui",
+            "npm:semantic-ui-react",
+            "npm:semantic-ui-css",
+            "mocks"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/app/basket.tsx",
+          "hash": "8237568263017679428",
+          "deps": [
+            "npm:semantic-ui-react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/checkout/src/environments/environment.prod.ts",
+          "hash": "10220522844224226756"
+        },
+        {
+          "file": "apps/checkout/src/environments/environment.ts",
+          "hash": "11309522437153898482"
+        },
+        {
+          "file": "apps/checkout/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/checkout/src/index.html",
+          "hash": "3332109658496016477"
+        },
+        {
+          "file": "apps/checkout/src/main.tsx",
+          "hash": "4731961929376199421",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/polyfills.ts",
+          "hash": "12959605551678143287",
+          "deps": [
+            "npm:core-js",
+            "npm:regenerator-runtime"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/checkout/tsconfig.app.json",
+          "hash": "3014325948479127667"
+        },
+        {
+          "file": "apps/checkout/tsconfig.json",
+          "hash": "16660509110492229666"
+        },
+        {
+          "file": "apps/checkout/tsconfig.spec.json",
+          "hash": "16995480535754382312"
+        },
+        {
+          "file": "apps/checkout/webpack.config.js",
+          "hash": "14358947659648703639",
+          "deps": [
+            "npm:@nrwl/react"
+          ]
+        }
+      ],
+      "custom-hooks": [
+        {
+          "file": "libs/custom-hooks/.babelrc",
+          "hash": "15526585767065692522"
+        },
+        {
+          "file": "libs/custom-hooks/.eslintrc.json",
+          "hash": "659015603474373109"
+        },
+        {
+          "file": "libs/custom-hooks/README.md",
+          "hash": "13237855568152742254"
+        },
+        {
+          "file": "libs/custom-hooks/jest.config.ts",
+          "hash": "12093380737351470494"
+        },
+        {
+          "file": "libs/custom-hooks/project.json",
+          "hash": "10857799332041063611"
+        },
+        {
+          "file": "libs/custom-hooks/src/index.ts",
+          "hash": "17065674988165689615"
+        },
+        {
+          "file": "libs/custom-hooks/src/lib/use-session-storage.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/custom-hooks/src/lib/use-session-storage.spec.tsx",
+          "hash": "16814713994141138879",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/custom-hooks/src/lib/use-session-storage.tsx",
+          "hash": "1156380923408977189",
+          "deps": [
+            "npm:react",
+            "npm:usehooks-ts"
+          ]
+        },
+        {
+          "file": "libs/custom-hooks/tsconfig.json",
+          "hash": "11477590071370859811"
+        },
+        {
+          "file": "libs/custom-hooks/tsconfig.lib.json",
+          "hash": "3014325948479127667"
+        },
+        {
+          "file": "libs/custom-hooks/tsconfig.spec.json",
+          "hash": "2406015174838385060"
+        }
+      ],
+      "app-shell": [
+        {
+          "file": "apps/app-shell/.babelrc",
+          "hash": "2147035467589940360"
+        },
+        {
+          "file": "apps/app-shell/.browserslistrc",
+          "hash": "2888533144288818662"
+        },
+        {
+          "file": "apps/app-shell/.eslintrc.json",
+          "hash": "659015603474373109"
+        },
+        {
+          "file": "apps/app-shell/jest.config.ts",
+          "hash": "14762141615572860905"
+        },
+        {
+          "file": "apps/app-shell/module-federation.config.js",
+          "hash": "9346715351498528380"
+        },
+        {
+          "file": "apps/app-shell/project.json",
+          "hash": "7897459542255074219"
+        },
+        {
+          "file": "apps/app-shell/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/app-shell/src/app/app.spec.tsx",
+          "hash": "6813917172132283013",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/app-shell/src/app/app.tsx",
+          "hash": "8147359434174017777",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:semantic-ui-react",
+            "npm:semantic-ui-ccs/semantic.min.css",
+            "ui",
+            [
+              "npm:catalog/Module",
+              "dynamic"
+            ],
+            [
+              "npm:checkout/Module",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/app-shell/src/app/nx-welcome.tsx",
+          "hash": "11694549967375543989"
+        },
+        {
+          "file": "apps/app-shell/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/app-shell/src/bootstrap.tsx",
+          "hash": "763379880219152615",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/app-shell/src/environments/environment.prod.ts",
+          "hash": "10220522844224226756"
+        },
+        {
+          "file": "apps/app-shell/src/environments/environment.ts",
+          "hash": "11309522437153898482"
+        },
+        {
+          "file": "apps/app-shell/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/app-shell/src/index.html",
+          "hash": "4495055432216297508"
+        },
+        {
+          "file": "apps/app-shell/src/main.ts",
+          "hash": "10018980967429810802"
+        },
+        {
+          "file": "apps/app-shell/src/polyfills.ts",
+          "hash": "12959605551678143287",
+          "deps": [
+            "npm:core-js",
+            "npm:regenerator-runtime"
+          ]
+        },
+        {
+          "file": "apps/app-shell/src/remotes.d.ts",
+          "hash": "5121433328101845179"
+        },
+        {
+          "file": "apps/app-shell/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/app-shell/tsconfig.app.json",
+          "hash": "3014325948479127667"
+        },
+        {
+          "file": "apps/app-shell/tsconfig.json",
+          "hash": "16660509110492229666"
+        },
+        {
+          "file": "apps/app-shell/tsconfig.spec.json",
+          "hash": "16995480535754382312"
+        },
+        {
+          "file": "apps/app-shell/webpack.config.js",
+          "hash": "4602317984680202324",
+          "deps": [
+            "npm:@nrwl/react"
+          ]
+        },
+        {
+          "file": "apps/app-shell/webpack.config.prod.js",
+          "hash": "16164137273467482770",
+          "deps": [
+            "npm:@nrwl/react"
+          ]
+        }
+      ],
+      "ui": [
+        {
+          "file": "libs/ui/.babelrc",
+          "hash": "15526585767065692522"
+        },
+        {
+          "file": "libs/ui/.eslintrc.json",
+          "hash": "659015603474373109"
+        },
+        {
+          "file": "libs/ui/README.md",
+          "hash": "2776327953747952561"
+        },
+        {
+          "file": "libs/ui/jest.config.ts",
+          "hash": "2633891181748193800"
+        },
+        {
+          "file": "libs/ui/project.json",
+          "hash": "1831889062057647713"
+        },
+        {
+          "file": "libs/ui/src/index.ts",
+          "hash": "6083964056753789366"
+        },
+        {
+          "file": "libs/ui/src/lib/header.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/ui/src/lib/header.spec.tsx",
+          "hash": "1572678573011016875",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/header.tsx",
+          "hash": "347161737909799067",
+          "deps": [
+            "npm:semantic-ui-react",
+            "npm:react",
+            "npm:usehooks-ts",
+            "utils",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/ui.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/ui/src/lib/ui.spec.tsx",
+          "hash": "7298740781061202243",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/ui.tsx",
+          "hash": "12179807727041286496"
+        },
+        {
+          "file": "libs/ui/tsconfig.json",
+          "hash": "11477590071370859811"
+        },
+        {
+          "file": "libs/ui/tsconfig.lib.json",
+          "hash": "3014325948479127667"
+        },
+        {
+          "file": "libs/ui/tsconfig.spec.json",
+          "hash": "2406015174838385060"
+        }
+      ],
+      "catalog": [
+        {
+          "file": "apps/catalog/.babelrc",
+          "hash": "2147035467589940360"
+        },
+        {
+          "file": "apps/catalog/.browserslistrc",
+          "hash": "2888533144288818662"
+        },
+        {
+          "file": "apps/catalog/.eslintrc.json",
+          "hash": "659015603474373109"
+        },
+        {
+          "file": "apps/catalog/jest.config.ts",
+          "hash": "8710597819035065949"
+        },
+        {
+          "file": "apps/catalog/module-federation.config.js",
+          "hash": "14390131416670299269"
+        },
+        {
+          "file": "apps/catalog/project.json",
+          "hash": "15691714985501476261"
+        },
+        {
+          "file": "apps/catalog/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/catalog/src/app/app.spec.tsx",
+          "hash": "13553018367436635779",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/catalog/src/app/app.tsx",
+          "hash": "4973228376266936043",
+          "deps": [
+            "ui",
+            "npm:semantic-ui-react",
+            "npm:semantic-ui-css"
+          ]
+        },
+        {
+          "file": "apps/catalog/src/app/product-card.tsx",
+          "hash": "5334006650364139476",
+          "deps": [
+            "npm:semantic-ui-react",
+            "custom-hooks"
+          ]
+        },
+        {
+          "file": "apps/catalog/src/app/product-list.tsx",
+          "hash": "17307642185985645013",
+          "deps": [
+            "npm:semantic-ui-react",
+            "mocks"
+          ]
+        },
+        {
+          "file": "apps/catalog/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/catalog/src/assets/apple.jpg",
+          "hash": "6071386178706881998"
+        },
+        {
+          "file": "apps/catalog/src/assets/bananas.jpg",
+          "hash": "1838744100454949751"
+        },
+        {
+          "file": "apps/catalog/src/assets/orange.jpg",
+          "hash": "7978071868476602380"
+        },
+        {
+          "file": "apps/catalog/src/environments/environment.prod.ts",
+          "hash": "10220522844224226756"
+        },
+        {
+          "file": "apps/catalog/src/environments/environment.ts",
+          "hash": "11309522437153898482"
+        },
+        {
+          "file": "apps/catalog/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/catalog/src/index.html",
+          "hash": "9049472098529670327"
+        },
+        {
+          "file": "apps/catalog/src/main.tsx",
+          "hash": "4731961929376199421",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/catalog/src/polyfills.ts",
+          "hash": "12959605551678143287",
+          "deps": [
+            "npm:core-js",
+            "npm:regenerator-runtime"
+          ]
+        },
+        {
+          "file": "apps/catalog/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/catalog/tsconfig.app.json",
+          "hash": "3014325948479127667"
+        },
+        {
+          "file": "apps/catalog/tsconfig.json",
+          "hash": "16660509110492229666"
+        },
+        {
+          "file": "apps/catalog/tsconfig.spec.json",
+          "hash": "16995480535754382312"
+        },
+        {
+          "file": "apps/catalog/webpack.config.js",
+          "hash": "14358947659648703639",
+          "deps": [
+            "npm:@nrwl/react"
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "file": "libs/mocks/.babelrc",
+          "hash": "15526585767065692522"
+        },
+        {
+          "file": "libs/mocks/.eslintrc.json",
+          "hash": "659015603474373109"
+        },
+        {
+          "file": "libs/mocks/README.md",
+          "hash": "1234241319132832338"
+        },
+        {
+          "file": "libs/mocks/jest.config.ts",
+          "hash": "7397543192090903946"
+        },
+        {
+          "file": "libs/mocks/project.json",
+          "hash": "895556122204804062"
+        },
+        {
+          "file": "libs/mocks/src/index.ts",
+          "hash": "2234033989006433489"
+        },
+        {
+          "file": "libs/mocks/src/lib/mocks.module.css",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "libs/mocks/src/lib/mocks.spec.tsx",
+          "hash": "9317902779253487900",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/mocks/src/lib/mocks.tsx",
+          "hash": "9245813837261152451"
+        },
+        {
+          "file": "libs/mocks/src/lib/product-list-mocks.tsx",
+          "hash": "17982782660545930426"
+        },
+        {
+          "file": "libs/mocks/tsconfig.json",
+          "hash": "11477590071370859811"
+        },
+        {
+          "file": "libs/mocks/tsconfig.lib.json",
+          "hash": "3014325948479127667"
+        },
+        {
+          "file": "libs/mocks/tsconfig.spec.json",
+          "hash": "2406015174838385060"
+        }
+      ]
+    }
+  }
+}

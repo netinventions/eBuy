@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve app-shell --verbose",
+    "startTime": "2024-02-25T00:51:54.980Z",
+    "endTime": "2024-02-25T00:51:57.955Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "app-shell:serve:development",
+      "target": "serve",
+      "projectName": "app-shell",
+      "hash": "12102164214232153109",
+      "startTime": "2024-02-25T00:51:54.987Z",
+      "endTime": "2024-02-25T00:51:57.954Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
