@@ -76,13 +76,13 @@
         "jestConfig": "apps/checkout/jest.config.ts",
         "passWithNoTests": true
       }
-    }
   },
   "serve-static": {  "executor": "@nrwl/web:file-server",
    "defaultConfiguration": "development",
    "options": {
       "buildTarget": "checkout:build",
       "port": 4202
+      }
     }
   },
   "tags": []
