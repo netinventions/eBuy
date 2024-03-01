@@ -1,0 +1,15 @@
+[1m[33mOption "isolatedConfig" is deprecated: Automatic configuration of Webpack is deprecated in favor of an explicit 'webpack.config.js' file. This option will be removed in Nx 19. See https://nx.dev/recipes/webpack/webpack-config-setup.[39m[22m
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mrequire(...) is not a function[39m
+
+
+TypeError: require(...) is not a function
+    at C:\Users\loren\IdeaProjects\GitHub\eBuy\apps\checkout\webpack.config.js:13:46
+    at combined (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\@nx+webpack@18.0.5_@types+node@18.16.9_nx@18.0.5_typescript@5.3.3\node_modules\@nx\webpack\src\utils\config.js:23:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getWebpackConfigs (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\@nx+webpack@18.0.5_@types+node@18.16.9_nx@18.0.5_typescript@5.3.3\node_modules\@nx\webpack\src\executors\webpack\webpack.impl.js:38:16)
+    at async webpackExecutor (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\@nx+webpack@18.0.5_@types+node@18.16.9_nx@18.0.5_typescript@5.3.3\node_modules\@nx\webpack\src\executors\webpack\webpack.impl.js:99:21)
+    at async getLastValueFromAsyncIterableIterator (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\nx@18.0.5\node_modules\nx\src\utils\async-iterator.js:13:19)
+    at async iteratorToProcessStatusCode (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\nx@18.0.5\node_modules\nx\src\command-line\run\run.js:43:29)
+    at async handleErrors (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\nx@18.0.5\node_modules\nx\src\utils\params.js:9:16)
+    at async process.<anonymous> (C:\Users\loren\IdeaProjects\GitHub\eBuy\node_modules\.pnpm\nx@18.0.5\node_modules\nx\bin\run-executor.js:59:28)

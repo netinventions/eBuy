@@ -89,3 +89,31 @@ CreateNodesError: Unable to create nodes for pnpm-lock.yaml using plugin nx/js/d
 }
 [NX Daemon Server] - 2024-01-29T21:52:21.431Z - Time taken for 'hash changed files from watcher' 537.2542000000831ms
 [NX Daemon Server] - 2024-01-29T21:52:21.431Z - Done responding to the client null
+[NX Daemon Server] - 2024-02-25T00:54:30.453Z - Started listening on: \\.\pipe\nx\C:\Users\loren\AppData\Local\Temp\1aeda5b894ccaed5b42b\d.sock
+[NX Daemon Server] - 2024-02-25T00:54:30.470Z - [WATCHER]: Subscribed to changes within: c:\Users\loren\IdeaProjects\GitHub\eBuy (native)
+[NX Daemon Server] - 2024-02-25T00:54:30.471Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-25T00:54:30.471Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-25T00:54:30.471Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-25T00:54:30.472Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-25T00:54:30.485Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-25T00:54:30.485Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-25T00:54:30.485Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-25T00:54:31.323Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-25T00:54:31.324Z - Time taken for 'total for creating and serializing project graph' 850.2237000018358ms
+[NX Daemon Server] - 2024-02-25T00:54:31.324Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-25T00:54:31.324Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 851. Response time: 1.
+[NX Daemon Server] - 2024-02-25T00:54:31.328Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-02-25T00:54:31.328Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-02-25T00:54:31.328Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-02-25T00:54:31.328Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-25T00:54:55.591Z - [WATCHER]: _tmp_24276_c05e132d57577ae2f8a3afb22ab10f90 was deleted
+[NX Daemon Server] - 2024-02-25T00:54:55.591Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-25T00:54:55.701Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-25T00:54:55.701Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-25T00:54:55.701Z - [REQUEST]: _tmp_24276_c05e132d57577ae2f8a3afb22ab10f90
+[NX Daemon Server] - 2024-02-25T00:54:55.740Z - Time taken for 'hash changed files from watcher' 0.15550000965595245ms
+[NX Daemon Server] - 2024-02-25T00:57:22.811Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-25T00:57:22.873Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-25T13:02:50.042Z - [WATCHER]: Stopping the watcher for c:\Users\loren\IdeaProjects\GitHub\eBuy (sources)
+[NX Daemon Server] - 2024-02-25T13:02:50.042Z - [WATCHER]: Stopping the watcher for c:\Users\loren\IdeaProjects\GitHub\eBuy (outputs)
+[NX Daemon Server] - 2024-02-25T13:02:50.042Z - Server stopped because: "10800000ms of inactivity"

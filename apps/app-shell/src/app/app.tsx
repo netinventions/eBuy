@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Routes } from 'react-router-dom';
 import {Container} from 'semantic-ui-react';
-import 'semantic-ui-ccs/semantic.min.css';
+import 'semantic-ui-css/semantic.min.css';
 import {Header} from '@ebuy/ui';
 
 const Catalog = React.lazy(() => import ('catalog/Module'));

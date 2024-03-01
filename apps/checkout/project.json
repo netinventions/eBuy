@@ -1,5 +1,4 @@
 {
-  "name": "checkout",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/checkout/src",
   "projectType": "application",
@@ -13,7 +12,7 @@
         "outputPath": "dist/apps/checkout",
         "index": "apps/checkout/src/index.html",
         "baseHref": "/",
-        "main": "apps/checkout/src/main.tsx",
+        "main": "apps/checkout/src/main.ts",
         "polyfills": "apps/checkout/src/polyfills.ts",
         "tsConfig": "apps/checkout/tsconfig.app.json",
         "assets": ["apps/checkout/src/favicon.ico", "apps/checkout/src/assets"],
